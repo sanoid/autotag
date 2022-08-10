@@ -24,8 +24,8 @@ public class autotag {
             Element trackTitleAttribute = doc.getElementsByClass("chartlist-name").get(i);
             Elements trackTitle = trackTitleAttribute.select("a[title]");
             String trackTitleValue = trackTitle.attr("title");
-            ++i;
-            System.out.println("" + i + ". " + trackTitleValue);
+            i++;
+            System.out.println(i + ". " + trackTitleValue);
         }
 
     }
